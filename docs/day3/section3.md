@@ -52,5 +52,5 @@
 
 ## 큐 문제 해결
 
-- [프로그래머스 기능 개발 문제](https://school.programmers.co.kr/learn/courses/30/lessons/42586){:target="_blank"} ([답안 코드](https://github.com/abel-shin/pccp-java/blob/main/src/day3/Solution3.java){:target="_blank"})
-- [프로그래머스 프로세스 문제](https://school.programmers.co.kr/learn/courses/30/lessons/42587){:target="_blank"} ([답안 코드](https://github.com/abel-shin/pccp-java/blob/main/src/day3/Solution4.java){:target="_blank"})
+- [프로그래머스 기능 개발 문제](https://school.programmers.co.kr/learn/courses/30/lessons/42586){:target="_blank"} ([답안 코드](https://github.com/abel-shin/pccp-python/blob/main/src/day3/Solution3.py){:target="_blank"})
+- [프로그래머스 프로세스 문제](https://school.programmers.co.kr/learn/courses/30/lessons/42587){:target="_blank"} ([답안 코드](https://github.com/abel-shin/pccp-python/blob/main/src/day3/Solution4.py){:target="_blank"})

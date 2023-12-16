@@ -36,7 +36,7 @@
     - 최선의 경우: O(n)
     - 평균적인 경우: O(n^2)
 
-``` java title="bubbleSort.java"
+``` python title="bubbleSort.py"
 void bubbleSort(int[] x) {
     int n = x.length - 1;
     for (int i = 0; i < n; i++) {
@@ -70,7 +70,7 @@ void bubbleSort(int[] x) {
     - 최선의 경우: O(n)
     - 평균적인 경우: O(n^2)
 
-``` java title="insertionSort.java"
+``` python title="insertionSort.py"
 void insertionSort(int[] x) {
     for (int i = 1; i < x.length; i++) {
         int j = i - 1;
@@ -98,7 +98,7 @@ void insertionSort(int[] x) {
     - 최선의 경우: O(n^2)
     - 평균적인 경우: O(n^2)
 
-``` java title="selectionSort.java"
+``` python title="selectionSort.py"
 void selectionSort(int[] x) {
     int n = x.length;
     for (int i = 0; i < n-1; i++) {
@@ -223,5 +223,5 @@ void selectionSort(int[] x) {
 
 ## 정렬 문제
 
-- [프로그래머스 문자열 내 마음대로 정렬하기 문제](https://school.programmers.co.kr/learn/courses/30/lessons/12915){:target="_blank"} ([답안 코드](https://github.com/abel-shin/pccp-java/blob/main/src/day2/Solution1.java){:target="_blank"})
-- [프로그래머스 가장 큰 수 문제](https://school.programmers.co.kr/learn/courses/30/lessons/42746){:target="_blank"} ([답안 코드](https://github.com/abel-shin/pccp-java/blob/main/src/day2/Solution2.java){:target="_blank"})
+- [프로그래머스 문자열 내 마음대로 정렬하기 문제](https://school.programmers.co.kr/learn/courses/30/lessons/12915){:target="_blank"} ([답안 코드](https://github.com/abel-shin/pccp-python/blob/main/src/day2/Solution1.py){:target="_blank"})
+- [프로그래머스 가장 큰 수 문제](https://school.programmers.co.kr/learn/courses/30/lessons/42746){:target="_blank"} ([답안 코드](https://github.com/abel-shin/pccp-python/blob/main/src/day2/Solution2.py){:target="_blank"})

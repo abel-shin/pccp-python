@@ -28,7 +28,7 @@
 
 ![피보나치 수열(DP)](img/section2/2.png)
 
-- [피보나치 수열 구현 연습](https://github.com/abel-shin/pccp-java/blob/main/src/extra/Practice1.java){:target="_blank"} ([답안 코드](https://github.com/abel-shin/pccp-java/blob/main/src/extra/Practice2.java){:target="_blank"})
+- [피보나치 수열 구현 연습](https://github.com/abel-shin/pccp-python/blob/main/src/extra/Practice1.py){:target="_blank"} ([답안 코드](https://github.com/abel-shin/pccp-python/blob/main/src/extra/Practice2.py){:target="_blank"})
 
 
 ### 0-1 배낭 문제 (0-1 Knapsack Problem)
@@ -47,10 +47,10 @@
 
 ![배낭 문제 DP 테이블](img/section2/4.png)
 
-- [0-1 배낭 문제 연습](https://github.com/abel-shin/pccp-java/blob/main/src/extra/Practice3.java){:target="_blank"} ([답안 코드](https://github.com/abel-shin/pccp-java/blob/main/src/extra/Practice4.java){:target="_blank"})
+- [0-1 배낭 문제 연습](https://github.com/abel-shin/pccp-python/blob/main/src/extra/Practice3.py){:target="_blank"} ([답안 코드](https://github.com/abel-shin/pccp-python/blob/main/src/extra/Practice4.py){:target="_blank"})
 
 
 ## 다이나믹 프로그래밍 문제 풀이
 
-- [프로그래머스 등굣길 문제](https://school.programmers.co.kr/learn/courses/30/lessons/42898){:target="_blank"} ([답안 코드](https://github.com/abel-shin/pccp-java/blob/main/src/extra/Solution1.java){:target="_blank"})
-- [프로그래머스 도둑질 문제](https://school.programmers.co.kr/learn/courses/30/lessons/42897){:target="_blank"} ([답안 코드](https://github.com/abel-shin/pccp-java/blob/main/src/extra/Solution2.java){:target="_blank"})
+- [프로그래머스 등굣길 문제](https://school.programmers.co.kr/learn/courses/30/lessons/42898){:target="_blank"} ([답안 코드](https://github.com/abel-shin/pccp-python/blob/main/src/extra/Solution1.py){:target="_blank"})
+- [프로그래머스 도둑질 문제](https://school.programmers.co.kr/learn/courses/30/lessons/42897){:target="_blank"} ([답안 코드](https://github.com/abel-shin/pccp-python/blob/main/src/extra/Solution2.py){:target="_blank"})

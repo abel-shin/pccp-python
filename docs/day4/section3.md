@@ -34,10 +34,10 @@
 
 ## N-Queen 문제 예시
 
-- [프로그래머스 N-Queen 문제](https://school.programmers.co.kr/learn/courses/30/lessons/12952){:target="_blank"} ([답안 코드](https://github.com/abel-shin/pccp-java/blob/main/src/day4/Solution3.java){:target="_blank"})
+- [프로그래머스 N-Queen 문제](https://school.programmers.co.kr/learn/courses/30/lessons/12952){:target="_blank"} ([답안 코드](https://github.com/abel-shin/pccp-python/blob/main/src/day4/Solution3.py){:target="_blank"})
 
 
 ## 트리 문제 풀이
 
-- [프로그래머스 여행경로 문제](https://school.programmers.co.kr/learn/courses/30/lessons/43164){:target="_blank"} ([답안 코드](https://github.com/abel-shin/pccp-java/blob/main/src/day4/Solution4.java){:target="_blank"})
-- [프로그래머스 모음 사전 문제](https://school.programmers.co.kr/learn/courses/30/lessons/84512){:target="_blank"} ([답안 코드](https://github.com/abel-shin/pccp-java/blob/main/src/day4/Solution5.java){:target="_blank"})
+- [프로그래머스 여행경로 문제](https://school.programmers.co.kr/learn/courses/30/lessons/43164){:target="_blank"} ([답안 코드](https://github.com/abel-shin/pccp-python/blob/main/src/day4/Solution4.py){:target="_blank"})
+- [프로그래머스 모음 사전 문제](https://school.programmers.co.kr/learn/courses/30/lessons/84512){:target="_blank"} ([답안 코드](https://github.com/abel-shin/pccp-python/blob/main/src/day4/Solution5.py){:target="_blank"})

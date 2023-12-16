@@ -22,5 +22,5 @@
 
 ## 이분 탐색 문제 풀이
 
-- [프로그래머스 입국심사 문제](https://programmers.co.kr/learn/courses/30/lessons/43238){:target="_blank"} ([답안 코드](https://github.com/abel-shin/pccp-java/blob/main/src/day2/Solution5.java){:target="_blank"})
-- [프로그래머스 징검다리 문제](https://programmers.co.kr/learn/courses/30/lessons/43236){:target="_blank"} ([답안 코드](https://github.com/abel-shin/pccp-java/blob/main/src/day2/Solution6.java){:target="_blank"})
+- [프로그래머스 입국심사 문제](https://programmers.co.kr/learn/courses/30/lessons/43238){:target="_blank"} ([답안 코드](https://github.com/abel-shin/pccp-python/blob/main/src/day2/Solution5.py){:target="_blank"})
+- [프로그래머스 징검다리 문제](https://programmers.co.kr/learn/courses/30/lessons/43236){:target="_blank"} ([답안 코드](https://github.com/abel-shin/pccp-python/blob/main/src/day2/Solution6.py){:target="_blank"})

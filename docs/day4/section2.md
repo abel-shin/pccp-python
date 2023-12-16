@@ -83,7 +83,7 @@
 
 ## 트리의 탐색 연습
 
-- [BFS/DFS 연습](https://github.com/abel-shin/pccp-java/blob/main/src/day4/Practice1.java){:target="_blank"}  ([답안 코드](https://github.com/abel-shin/pccp-java/blob/main/src/day4/Practice2.java){:target="_blank"})
+- [BFS/DFS 연습](https://github.com/abel-shin/pccp-python/blob/main/src/day4/Practice1.py){:target="_blank"}  ([답안 코드](https://github.com/abel-shin/pccp-python/blob/main/src/day4/Practice2.py){:target="_blank"})
 
 ## 트리 문제 예시
 
@@ -95,5 +95,5 @@
 
 ## 트리 문제 풀이
 
-- [프로그래머스 타겟 넘버 문제](https://school.programmers.co.kr/learn/courses/30/lessons/43165){:target="_blank"} ([답안 코드](https://github.com/abel-shin/pccp-java/blob/main/src/day4/Solution1.java){:target="_blank"})
-- [프로그래머스 숫자 변환하기 문제](https://school.programmers.co.kr/learn/courses/30/lessons/154538){:target="_blank"} ([답안 코드](https://github.com/abel-shin/pccp-java/blob/main/src/day4/Solution2.java){:target="_blank"})
+- [프로그래머스 타겟 넘버 문제](https://school.programmers.co.kr/learn/courses/30/lessons/43165){:target="_blank"} ([답안 코드](https://github.com/abel-shin/pccp-python/blob/main/src/day4/Solution1.py){:target="_blank"})
+- [프로그래머스 숫자 변환하기 문제](https://school.programmers.co.kr/learn/courses/30/lessons/154538){:target="_blank"} ([답안 코드](https://github.com/abel-shin/pccp-python/blob/main/src/day4/Solution2.py){:target="_blank"})

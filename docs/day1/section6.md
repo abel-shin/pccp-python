@@ -91,5 +91,5 @@
 
 ## 해시 테이블 문제 풀이
 
-- [프로그래머스 완주하지 못한 선수 문제](https://school.programmers.co.kr/learn/courses/30/lessons/42576){:target="_blank"} ([답안 코드](https://github.com/abel-shin/pccp-java/blob/main/src/day1/Solution3.java){:target="_blank"})
-- [프로그래머스 베스트앨범 문제](https://programmers.co.kr/learn/courses/30/lessons/42579){:target="_blank"} ([답안 코드](https://github.com/abel-shin/pccp-java/blob/main/src/day1/Solution4.java){:target="_blank"})
+- [프로그래머스 완주하지 못한 선수 문제](https://school.programmers.co.kr/learn/courses/30/lessons/42576){:target="_blank"} ([답안 코드](https://github.com/abel-shin/pccp-python/blob/main/src/day1/Solution3.py){:target="_blank"})
+- [프로그래머스 베스트앨범 문제](https://programmers.co.kr/learn/courses/30/lessons/42579){:target="_blank"} ([답안 코드](https://github.com/abel-shin/pccp-python/blob/main/src/day1/Solution4.py){:target="_blank"})

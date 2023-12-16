@@ -75,5 +75,5 @@
 
 ## 탐욕법 문제 풀이
 
-- [프로그래머스 체육복 문제](https://school.programmers.co.kr/learn/courses/30/lessons/42862){:target="_blank"} ([답안 코드](https://github.com/abel-shin/pccp-java/blob/main/src/day2/Solution3.java){:target="_blank"})
-- [프로그래머스 구명보트 문제](https://school.programmers.co.kr/learn/courses/30/lessons/42885){:target="_blank"} ([답안 코드](https://github.com/abel-shin/pccp-java/blob/main/src/day2/Solution4.java){:target="_blank"})
+- [프로그래머스 체육복 문제](https://school.programmers.co.kr/learn/courses/30/lessons/42862){:target="_blank"} ([답안 코드](https://github.com/abel-shin/pccp-python/blob/main/src/day2/Solution3.py){:target="_blank"})
+- [프로그래머스 구명보트 문제](https://school.programmers.co.kr/learn/courses/30/lessons/42885){:target="_blank"} ([답안 코드](https://github.com/abel-shin/pccp-python/blob/main/src/day2/Solution4.py){:target="_blank"})

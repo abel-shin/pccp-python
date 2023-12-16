@@ -29,7 +29,7 @@
 
 - `Stack<T>` 제네릭 클래스가 있으나, **속도가 아주 느리므로 쓰지 않는다.**
 
-    ``` java title="Don't use this"
+    ``` python title="Don't use this"
     Stack<Integer> stack = new Stack<>();
     stack.push(1);
     stack.push(12);
@@ -62,5 +62,5 @@
 
 ## 스택 문제 해결
 
-- [프로그래머스 올바른 괄호 문제](https://school.programmers.co.kr/learn/courses/30/lessons/12909){:target="_blank"} ([답안 코드](https://github.com/abel-shin/pccp-java/blob/main/src/day3/Solution1.java){:target="_blank"})
-- [프로그래머스 주식 가격 문제](https://school.programmers.co.kr/learn/courses/30/lessons/42584){:target="_blank"} ([답안 코드](https://github.com/abel-shin/pccp-java/blob/main/src/day3/Solution2.java){:target="_blank"})
+- [프로그래머스 올바른 괄호 문제](https://school.programmers.co.kr/learn/courses/30/lessons/12909){:target="_blank"} ([답안 코드](https://github.com/abel-shin/pccp-python/blob/main/src/day3/Solution1.py){:target="_blank"})
+- [프로그래머스 주식 가격 문제](https://school.programmers.co.kr/learn/courses/30/lessons/42584){:target="_blank"} ([답안 코드](https://github.com/abel-shin/pccp-python/blob/main/src/day3/Solution2.py){:target="_blank"})

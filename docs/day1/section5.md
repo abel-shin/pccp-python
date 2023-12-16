@@ -26,7 +26,7 @@
 
 - 아래와 같은 코드로 문자열을 결합할 경우, for문을 반복할 때 마다 새로운 문자열을 생성한다.
 
-    ``` java title="Don't do like this"
+    ``` python title="Don't do like this"
     String s = "";
     String[] strings = {"I", "want", "to", "concatenate", "all", "strings"};
 
@@ -69,5 +69,5 @@
 
 ## 문자열 문제 풀이
 
-- [프로그래머스 문자열 밀기 문제](https://school.programmers.co.kr/learn/courses/30/lessons/120921){:target="_blank"} ([답안 코드](https://github.com/abel-shin/pccp-java/blob/main/src/day1/Solution1.java){:target="_blank"})
-- [프로그래머스 문자열 나누기 문제](https://school.programmers.co.kr/learn/courses/30/lessons/140108){:target="_blank"} ([답안 코드](https://github.com/abel-shin/pccp-java/blob/main/src/day1/Solution2.java){:target="_blank"})
+- [프로그래머스 문자열 밀기 문제](https://school.programmers.co.kr/learn/courses/30/lessons/120921){:target="_blank"} ([답안 코드](https://github.com/abel-shin/pccp-python/blob/main/src/day1/Solution1.py){:target="_blank"})
+- [프로그래머스 문자열 나누기 문제](https://school.programmers.co.kr/learn/courses/30/lessons/140108){:target="_blank"} ([답안 코드](https://github.com/abel-shin/pccp-python/blob/main/src/day1/Solution2.py){:target="_blank"})

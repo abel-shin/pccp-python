@@ -23,7 +23,7 @@
 - 점화식에 의거하여 재귀 호출을 수행한다.
     - 입력 파라미터를 달리하여, 결국 탈출 조건에 도달할 수 있게 한다.
 
-``` java title="Fibonacci using recursion" 
+``` python title="Fibonacci using recursion" 
 int fibonacci(n){
     if (n < 2) { // 탈출 조건
         return 1;
@@ -45,7 +45,7 @@ int fibonacci(n){
 - 대부분의 재귀 함수는 for문이나 while문으로 구현할 수 있다.
 - 탈출 조건 대신 초기값을 이용하여 Bottom-Up 형태로 구현한다.
 
-    ``` java title="Fibonacci using iteration"
+    ``` python title="Fibonacci using iteration"
     int fibonacci_iter(n) {
         int a = 1, b = 1; // 초기값
         for (int i = 3; i < n; i++) {
@@ -63,7 +63,7 @@ int fibonacci(n){
 - 스택을 이용하면 재귀 호출과 동일한 로직을 재귀 호출 없이 구현할 수 있다.
 
 
-    ``` java title="Fibonacci using a stack"
+    ``` python title="Fibonacci using a stack"
     int fibonacci_stack(n) {
         int result = 0;
         
@@ -92,5 +92,5 @@ int fibonacci(n){
 
 ## 재귀 문제 풀이
 
-- [프로그래머스 하노이의 탑](https://programmers.co.kr/learn/courses/30/lessons/12946){:target="_blank"} ([답안 코드](https://github.com/abel-shin/pccp-java/blob/main/src/day3/Solution5.java){:target="_blank"})
-- [카카오 괄호 변환 문제](https://programmers.co.kr/learn/courses/30/lessons/60058){:target="_blank"} ([답안 코드](https://github.com/abel-shin/pccp-java/blob/main/src/day3/Solution6.java){:target="_blank"})
+- [프로그래머스 하노이의 탑](https://programmers.co.kr/learn/courses/30/lessons/12946){:target="_blank"} ([답안 코드](https://github.com/abel-shin/pccp-python/blob/main/src/day3/Solution5.py){:target="_blank"})
+- [카카오 괄호 변환 문제](https://programmers.co.kr/learn/courses/30/lessons/60058){:target="_blank"} ([답안 코드](https://github.com/abel-shin/pccp-python/blob/main/src/day3/Solution6.py){:target="_blank"})
