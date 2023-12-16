@@ -12,11 +12,11 @@
 
 ### What's In
 
-- JCF(Java Collections Framework)를 이용해 자료구조를 이용합니다.
-- Java 언어를 이용해 기초적인 알고리즘을 구현합니다.
+- 파이썬 자료형과 Collections를 이용해 자료구조를 이용합니다.
+- Python 언어를 이용해 기초적인 알고리즘을 구현합니다.
 - 기본적인 문제를 풀이하며 코딩테스트의 감각을 익힙니다.
 
 ### What's Not In
 
-- Java 언어의 기초 문법은 다루지 않습니다.
+- Python 언어의 기초 문법은 다루지 않습니다.
 - Coding Convention에 대해서는 깊게 다루지 않습니다.
