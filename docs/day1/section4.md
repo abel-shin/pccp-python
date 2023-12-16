@@ -112,7 +112,7 @@ for i in range(len(array2D)) {
 
 ![리스트 개체 삽입](img/section4/4.png)
 
-- $\text{Ω}(n)$,  $\text{Ω}(n^2)$ $\text{Ω}(n\log n)$ ...
+- $\text{Ω}(n)$,  $\text{Ω}(n^2)$, $\text{Ω}(n\log n)$ ...
 - $f(n)$ 의 Big-Omega Notation 정의:
     - $\text{Ω}(g(n)) = \{ f(n)|0 \le c \cdot g(n) \le f(n) \space \space  \text{for all} \space n \ge n_0 > 0 \}\space \space \text{for} \space \space \exists c > 0.$
 - 예시
