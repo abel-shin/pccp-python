@@ -43,7 +43,7 @@
 
 - 몇가지 기능이 추가되어 있는 `Deque<T>` 제네릭 인터페이스와 `ArrayDeque<T>` 제네릭 클래스를 사용한다.
 
-    ``` java
+    ``` python
     Deque<Integer> stack = new ArrayDeque<>();
     stack.push(1);
     stack.push(12);

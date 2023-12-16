@@ -38,7 +38,7 @@
 
 - StringBuilder를 사용하면 마지막에 단 한번의 문자열만을 생성하여 효율적으로 동작한다.
 
-    ``` java
+    ``` python
     StringBuilder sb = new StringBuilder();
     String[] strings = {"I", "want", "to", "concatenate", "all", "strings"};
 
@@ -52,7 +52,7 @@
 
 - 배열이나 리스트에 있는 문자열들을 결합하려면 `join` 메소드를 사용할 수도 있다. (Java8 and above)
 
-    ``` java
+    ``` python
     String[] strings = {"I", "want", "to", "concatenate", "all", "strings"};
     String s = String.join(" ", strings);
     System.out.println(s); // I want to concatenate all strings
@@ -60,7 +60,7 @@
 
 - Stream에 있는 문자열들을 결합하려면 `Collectors.joining()`을 사용할 수도 있다.
 
-    ``` java
+    ``` python
     String[] strings = {"I", "want", "to", "concatenate", "all", "strings"};
     String s = Arrays.stream(strings).collect(Collectors.joining(" "));
     System.out.println(s); // I want to concatenate all strings

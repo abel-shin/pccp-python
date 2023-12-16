@@ -20,47 +20,47 @@
 
 - 반복문과 조건문을 고려하여 분기별로 실행 횟수를 분석을 통해 알아낼 수 있다.
 
-``` java
-// array의 길이 = N
-int[] array = {1, 6, 2, 5, 4, 2, 5, 2, 3, 6, 3};
+``` python
+# array의 길이 = N
+array = [1, 6, 2, 5, 4, 2, 5, 2, 3, 6, 3]
 
-int sum = 0;
-// 배열의 길이에 비례해서 반복하는 for문. 복잡도는 N
-for (int i = 0; i < array.length; i++) { 
-    sum += array[i];
+sum = 0
+# 배열의 길이에 비례해서 반복하는 for문. 복잡도는 N
+for i in range(len(array)) { 
+    sum += array[i]
 }
 ```
 
-``` java
-// array의 길이 = N, array2의 길이 = M
-int[] array = {1, 6, 2, 5, 4, 2, 5, 2, 3, 6, 3};
-int[] array2 = {4, 2, 1, 6, 7, 4, 3, 6};
+``` python
+# array의 길이 = N, array2의 길이 = M
+array = [1, 6, 2, 5, 4, 2, 5, 2, 3, 6, 3]
+array2 = [4, 2, 1, 6, 7, 4, 3, 6]
 
-int sum = 0;
-// 배열의 길이에 비례해서 반복하는 for문. 복잡도는 N
-for (int i = 0; i < array.length; i++) { 
-    sum += array[i];
+sum = 0
+# 배열의 길이에 비례해서 반복하는 for문. 복잡도는 N
+for i in range(len(array)) { 
+    sum += array[i]
 }
 
-// 두 번째 반복, 복잡도는 M
-for (int i = 0; i < array2.length; i++) { 
-    sum += array2[i];
+# 두 번째 반복, 복잡도는 M
+for i in range(len(array2)) { 
+    sum += array2[i]
 }
 
-// 두 for문의 복잡도를 합친 전체 복잡도는 N+M
+# 두 for문의 복잡도를 합친 전체 복잡도는 N+M
 ```
 
-``` java
-// 2차원 array의 길이 = N*M
-int[] array2D = {{1, 6, 2, 5, 4},
-               {2, 5, 2, 3, 6},
-               {3, 1, 2, 4, 5}};
+``` python
+# 2차원 array의 길이 = N*M
+array2D = [[1, 6, 2, 5, 4],
+           [2, 5, 2, 3, 6],
+           [3, 1, 2, 4, 5]]
 
-int sum = 0;
-// 이중 for문, M번 반복이 N번 반복되므로 복잡도는 N*M
-for (int i = 0; i < array2D.length; i++) { 
-    for (int j = 0; j < array2D[i].length; j++) { 
-        sum += array2D[i][j];
+sum = 0
+# 이중 for문, M번 반복이 N번 반복되므로 복잡도는 N*M
+for i in range(len(array2D)) { 
+    for j in range(len(array2D[i])) { 
+        sum += array2D[i][j]
     }
 }
 ```
@@ -81,7 +81,7 @@ for (int i = 0; i < array2D.length; i++) {
 ![리스트 개체 삽입](img/section4/2.png)
 
 - 점진적(asymptotic) 표기 방법
-- 알고리즘에 입력되는 자료의 개수(![n](https://render.githubusercontent.com/render/math?math=n))가 충분히 많다고 가정
+- 알고리즘에 입력되는 자료의 개수($n$)가 충분히 많다고 가정
     - 입력 자료의 개수가 작은 경우, 비교하는 의미가 크게 없기 때문
 - **성능 평가에 공평한 비교** 를 하기 위한 성능 분석 기준으로 사용
     - 동작 시스템, 데이터 크기 등을 배제하고 성능을 비교하기 위해 필요

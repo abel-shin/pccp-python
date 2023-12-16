@@ -175,7 +175,7 @@ void selectionSort(int[] x) {
 - `Comparable` 인터페이스를 구현하여 정렬 가능한 객체를 만들 수 있다.
 - 객체지향적인(OOP) 방법으로, 구현해야 하는 코드 양이 많은 편
 
-    ``` java
+    ``` python
     class Item implements Comparable<Item> {
         int x;
         int y;
@@ -208,7 +208,7 @@ void selectionSort(int[] x) {
 - `Comparator` 클래스를 구현하여 정렬 방법을 결정할 수 있다.
 - 람다식을 이용한 함수형 프로그래밍(FP) 방법으로 적은 코드 작성으로도 구현이 가능
 
-    ``` java
+    ``` python
     List<int[]> items = new ArrayList<>();
     ...
     items.sort((a, b) -> {

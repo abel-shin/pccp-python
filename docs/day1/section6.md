@@ -63,7 +63,7 @@
 - 해시 셋: Java에서 가장 많이 쓰이는 집합 자료 구조
     - 주로 `Set<T>` 제네릭 인터페이스와 `HashSet<T>` 제네릭 클래스를 사용한다.
 
-    ``` java
+    ``` python
     Set<Integer> set = new HashSet<>();
     set.add(4);
     set.add(10);
@@ -77,7 +77,7 @@
 - 해시 맵: Java에서 가장 많이 쓰이는 해시 테이블 자료 구조
     - 주로 `Map<K, V>` 제네릭 인터페이스와 `HashMap<K, V>` 제네릭 클래스를 사용한다.
 
-    ``` java
+    ``` python
     Map<String, Integer> map = new HashMap<>();
     map.put("사과", 1000);
     map.put("바나나", 2000);

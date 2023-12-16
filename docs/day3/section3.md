@@ -38,7 +38,7 @@
 
 - 일반적으로 `Queue<T>` 제네릭 인터페이스와 `LinkedList<T>` 제네릭 클래스 사용
 
-    ``` java
+    ``` python
     Queue<Integer> queue = new LinkedList<>();
     queue.offer(1);
     queue.offer(12);
