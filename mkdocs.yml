@@ -1,0 +1,67 @@
+site_name: Abel's PCCP 교육자료
+theme:
+  name: material
+  language: ko
+  palette:
+    primary: custom
+  features:
+    - content.code.copy
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.footer
+nav:
+  - 'index.md'
+  - Day1:
+    - 'day1/section1.md'
+    - 'day1/section2.md'
+    - 'day1/section3.md'
+    - 'day1/section4.md'
+    - 'day1/section5.md'
+    - 'day1/section6.md'
+    - 'day1/section7.md'
+  - Day2:
+    - 'day2/section1.md'
+    - 'day2/section2.md'
+    - 'day2/section3.md'
+    - 'day2/section4.md'
+  - Day3:
+    - 'day3/section1.md'
+    - 'day3/section2.md'
+    - 'day3/section3.md'
+    - 'day3/section4.md'
+  - Day4:
+    - 'day4/section1.md'
+    - 'day4/section2.md'
+    - 'day4/section3.md'
+  - Day5:
+    - 'day5/section1.md'
+    - 'day5/section2.md'
+    - 'day5/section3.md'
+  - Extra:
+    - 'extra/section1.md'
+    - 'extra/section2.md'
+  - 모의고사1:
+    - 'prob1/section1.md'
+    - 'prob1/section2.md'
+  - 모의고사2:
+    - 'prob2/section1.md'
+    - 'prob2/section2.md'
+  - 'endnote.md'
+extra_css:
+  - stylesheets/extra.css
+
+copyright: Copyright &copy; 2023 Abel Shin
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - admonition
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.details
+  - attr_list
+extra: 
+  generator: false
