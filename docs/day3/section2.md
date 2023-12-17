@@ -37,7 +37,7 @@
 
     while stack:
         value = stack.pop()
-        print(value) // 30, 12, 1
+        print(value) # 30, 12, 1
     ```
 
 - 몇가지 기능이 추가된 `collections`의 `deque`를 쓸 수 있다. 성능상 이점이 있기 때문에, 빈번하게 사용된다면 이것을 사용한다.
@@ -51,7 +51,7 @@
 
     while stack:
         value = stack.pop()
-        print(value) // 30, 12, 1
+        print(value) # 30, 12, 1
     ```
 
     !!! note
