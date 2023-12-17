@@ -1,8 +1,5 @@
 # https://school.programmers.co.kr/learn/courses/30/lessons/42746
 
-from functools import cmp_to_key
-
-
 # 우선, 정렬 문제인지 알아채는 것이 중요한 문제입니다.
 # 문자열을 이어붙이는 순서에 따라 어떤 방법이 더 큰 수를 만드는지 비교하여 정렬합니다.
 # key 대신 compare 함수를 입력받을 수 있는 cmp_to_key를 이용하면 됩니다.
