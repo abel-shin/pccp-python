@@ -25,34 +25,33 @@
     - 배열을 사용하므로, 크기가 정해져 있다.
     - 메모리 상에서 연속으로 존재하기 떄문에 동작 속도가 빠르다.
 
-## Java에서 스택의 사용
+## Python에서 스택의 사용
 
-- `Stack<T>` 제네릭 클래스가 있으나, **속도가 아주 느리므로 쓰지 않는다.**
-
-    ``` python title="Don't use this"
-    Stack<Integer> stack = new Stack<>();
-    stack.push(1);
-    stack.push(12);
-    stack.push(30);
-
-    while (!stack.isEmpty()) {
-        int value = stack.pop();
-        System.out.println(value); // 30, 12, 1
-    }
-    ```
-
-- 몇가지 기능이 추가되어 있는 `Deque<T>` 제네릭 인터페이스와 `ArrayDeque<T>` 제네릭 클래스를 사용한다.
+- 파이썬 list를 스택으로 간단히 활용할 수 있다.
 
     ``` python
-    Deque<Integer> stack = new ArrayDeque<>();
-    stack.push(1);
-    stack.push(12);
-    stack.push(30);
+    stack = []
+    stack.append(1)
+    stack.append(12)
+    stack.append(30)
 
-    while (!stack.isEmpty()) {
-        int value = stack.pop();
-        System.out.println(value); // 30, 12, 1
-    }
+    while stack:
+        value = stack.pop()
+        print(value) // 30, 12, 1
+    ```
+
+- 몇가지 기능이 추가된 `collections`의 `deque`를 쓸 수 있다. 성능상 이점이 있기 때문에, 빈번하게 사용된다면 이것을 사용한다.
+
+    ``` python
+    from collections import deque
+    stack = deque()
+    stack.append(1)
+    stack.append(12)
+    stack.append(30)
+
+    while stack:
+        value = stack.pop()
+        print(value) // 30, 12, 1
     ```
 
     !!! note

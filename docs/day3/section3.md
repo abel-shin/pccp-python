@@ -34,20 +34,21 @@
     - 물리적인 메모리를 모두 사용하기 전까지 Overflow가 발생하지 않음
 
 
-## Java에서 큐의 사용
+## Python에서 큐의 사용
 
-- 일반적으로 `Queue<T>` 제네릭 인터페이스와 `LinkedList<T>` 제네릭 클래스 사용
+- 스택과 마찬가지로 list와 deque를 주로 사용
 
     ``` python
-    Queue<Integer> queue = new LinkedList<>();
-    queue.offer(1);
-    queue.offer(12);
-    queue.offer(30);
+    from collections import deque
+    
+    queue = deque()
+    queue.append(1)
+    queue.append(12)
+    queue.append(30)
 
-    while (!queue.isEmpty()) {
-        int value = queue.poll();
-        System.out.println(value); // 1, 12, 30
-    }
+    while queue:
+        value = queue.popleft()
+        print(value) # 1, 12, 30
     ```
 
 ## 큐 문제 해결

@@ -24,12 +24,10 @@
     - 입력 파라미터를 달리하여, 결국 탈출 조건에 도달할 수 있게 한다.
 
 ``` python title="Fibonacci using recursion" 
-int fibonacci(n){
-    if (n < 2) { // 탈출 조건
-        return 1;
-    }
-    return fibonacci(n-1) + fibonacci(n-2); // 재귀 호출(점화식 구현)
-}
+def fibonacci(n):
+    if (n < 2): # 탈출 조건
+        return 1
+    return fibonacci(n-1) + fibonacci(n-2) # 재귀 호출(점화식 구현)
 ```
 
 ## 재귀 호출의 한계
@@ -38,6 +36,7 @@ int fibonacci(n){
 
 - 여러번 재귀 호출이 발생하는 경우, 기하급수적으로 호출 횟수가 증가한다.
     - 함수 호출 스택(Function call stack)의 크기에 제한이 있어, 일정 횟수 이상 호출이 불가하다.
+    - Python 함수 호출 스택 제한 변경: `import sys, sys.setrecursionlimit(10000)`
 - 실질적인 계산에 필요한 연산보다, 함수 호출에 의한 Overhead가 발생한다.
 
 ## 재귀 함수의 반복 구현
@@ -46,15 +45,11 @@ int fibonacci(n){
 - 탈출 조건 대신 초기값을 이용하여 Bottom-Up 형태로 구현한다.
 
     ``` python title="Fibonacci using iteration"
-    int fibonacci_iter(n) {
-        int a = 1, b = 1; // 초기값
-        for (int i = 3; i < n; i++) {
-            int temp = a;
-            a = a + b; // a는 fibo(i)를 기억
-            b = temp;  // b는 fibo(i-1)를 기억
-        }
-        return a;
-    }
+    def fibonacci_iter(n):
+        int a = 1, b = 1; # 초기값
+        for i in range(3, n+1):
+            a, b = a + b, a # a는 fibo(i)를 기억, b는 fibo(i-1)를 기억
+        return a
     ```
 
 
@@ -64,25 +59,22 @@ int fibonacci(n){
 
 
     ``` python title="Fibonacci using a stack"
-    int fibonacci_stack(n) {
-        int result = 0;
+    def fibonacci_stack(n):
+        result = 0
         
-        Deque<Integer> stack = new ArrayDeque<>();
-        stack.push(n);
+        stack = []
+        stack.append(n)
         
-        while (!stack.isEmpty()) {
-            int value = stack.pop();
+        while stack:
+            value = stack.pop()
 
-            if (value == 0 || value == 1) {
-                result += 1;
-            } else {
-                stack.push(value - 1);
-                stack.push(value - 2);
-            }
-        }
+            if value == 0 or value == 1:
+                result += 1
+            else:
+                stack.append(value - 1)
+                stack.append(value - 2)
 
-        return result;
-    }
+        return result
     ```
 
     !!! note
