@@ -58,35 +58,33 @@
 - 해시 충돌이 발생할 경우 링크드 리스트에 노드를 추가하는 방법으로 해결하는 방법
     - 배열에 값을 저장하는 대신, 링크드 리스트를 저장한다.
 
-## Java의 해시 자료구조
+## Python의 해시 자료구조
 
-- 해시 셋: Java에서 가장 많이 쓰이는 집합 자료 구조
-    - 주로 `Set<T>` 제네릭 인터페이스와 `HashSet<T>` 제네릭 클래스를 사용한다.
+- `set`: Python에서 제공하는 기본 집합 자료형
 
     ``` python
-    Set<Integer> set = new HashSet<>();
-    set.add(4);
-    set.add(10);
-    set.add(1);
-    set.add(4); // 기존에 4가 중복되어 있으므로 삽입되지 않음
+    set_a = set()
+    set_a.add(4)
+    set_a.add(10)
+    set_a.add(1)
+    set_a.add(4) # 기존에 4가 중복되어 있으므로 삽입되지 않음
 
-    set.stream().forEach(System.out::println); // 4, 10, 1 (순서 무관)
+    for item in set_a:
+        print(item) # 4, 10, 1 (순서 무관)
     ```
 
 
-- 해시 맵: Java에서 가장 많이 쓰이는 해시 테이블 자료 구조
-    - 주로 `Map<K, V>` 제네릭 인터페이스와 `HashMap<K, V>` 제네릭 클래스를 사용한다.
+- `dict`: Python에서 제공하는 기본 딕셔너리 자료형
 
     ``` python
-    Map<String, Integer> map = new HashMap<>();
-    map.put("사과", 1000);
-    map.put("바나나", 2000);
-    map.put("포도", 3000);
-    map.put("바나나", 1500); // 기존 "바나나"의 value(2000)를 덮어씀
+    map = dict()
+    map["사과"] = 1000
+    map["바나나"] = 2000
+    map["포도"] = 3000
+    map["바나나"] = 1500 # 기존 "바나나"의 value(2000)를 덮어씀
 
-    for (String key: map.keySet()) {
-        System.out.println(key + " " + map.get(key));  // 사과 1000, 바나나 1500, 포도 3000 (순서 무관)
-    }
+    for key in map:
+        print(key, map[key]) # 사과 1000, 바나나 1500, 포도 3000 (Python3.6부터 순서 보장)
     ```
 
 ## 해시 테이블 문제 풀이
