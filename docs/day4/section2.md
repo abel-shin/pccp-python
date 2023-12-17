@@ -68,12 +68,12 @@
 - 노드를 이용한 구현
     - 아래와 같은 `Node` 클래스를 이용하여 구현
 
-        ```java
-        class Node {
-            int value;
-            Node left;
-            Node right;
-        }
+        ``` python
+        class Node:
+            def __init__(self, value, left=None, right=None):
+                self.value = value
+                self.left: Node = left
+                self.right: Node = right
         ```
 
     !!! note
