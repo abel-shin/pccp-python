@@ -36,24 +36,17 @@
     - 최선의 경우: O(n)
     - 평균적인 경우: O(n^2)
 
-``` python title="bubbleSort.py"
-void bubbleSort(int[] x) {
-    int n = x.length - 1;
-    for (int i = 0; i < n; i++) {
-        boolean swapped = false;
-        for (int j = 0; j < n-i; j++) {
-            if (x[j] > x[j+1]) {
-                swapped = true;
-                int temp = x[j+1];
-                x[j+1] = x[j];
-                x[j] = temp;
-            }
-        }
-        if (!swapped) {
-            break;
-        }
-    }
-}
+``` python title="bubble_sort.py"
+def bubble_sort(x):
+    n = len(x) - 1
+    for i in range(n):
+        swapped = False
+        for j in range(n-i):
+            if (x[j] > x[j+1]):
+                swapped = True
+                x[j+1], x[j] = x[j], x[j+1]
+        if swapped:
+            break
 ```
 
 ### 삽입 정렬 (Insertion Sort)
@@ -70,18 +63,15 @@ void bubbleSort(int[] x) {
     - 최선의 경우: O(n)
     - 평균적인 경우: O(n^2)
 
-``` python title="insertionSort.py"
-void insertionSort(int[] x) {
-    for (int i = 1; i < x.length; i++) {
-        int j = i - 1;
-        int key = x[i];
-        while (x[j] > key && j >= 0) {
-            x[j+1] = x[j];
-            j = j - 1;
-        }
-        x[j+1] = key;
-    }
-}
+``` python title="insertion_sort.py"
+def insertion_sort(x):
+    for i in range(1, len(x)):
+        j = i-1
+        key = x[i]
+        while (x[j] > key and j >= 0):
+            x[j+1] = x[j]
+            j = j - 1
+        x[j+1] = key
 ```
 
 ### 선택 정렬 (Selection Sort)
@@ -98,21 +88,15 @@ void insertionSort(int[] x) {
     - 최선의 경우: O(n^2)
     - 평균적인 경우: O(n^2)
 
-``` python title="selectionSort.py"
-void selectionSort(int[] x) {
-    int n = x.length;
-    for (int i = 0; i < n-1; i++) {
-        int indexMin = i;
-        for (int j = i+1; j < n; j++) {
-            if (x[indexMin] > x[j]) {
-                indexMin = j;
-            }
-            int temp = x[indexMin];
-            x[indexMin] = x[i];
-            x[i] = temp;
-        }
-    }
-}
+``` python title="selection_sort.py"
+def selection_sort(x):
+    n = len(x)
+    for i in range(n-1):
+        index_min = i
+        for j in range(i+1, n):
+            if x[index_min] > x[j]:
+                index_min = j
+            x[index_min], x[i] = x[i], x[index_min]
 ```
 
 
@@ -167,58 +151,34 @@ void selectionSort(int[] x) {
 
 - 정렬 알고리즘은 그 자체만으로 출제되기 보다는, 다른 문제를 해결 하는 데에 보조적으로 쓰인다.
     - 탐욕 알고리즘에서 국소최적값을 찾기 위해 활용
-    - 특이한 조건으로 값의 순서를 찾아야 할 때 `Comparator`를 적절히 구현하여 활용
+    - 특이한 조건으로 값의 순서를 찾아야 할 때 `key`와 익명함수를 이용하여 구현
     - 여러개의 기준을 동시에 만족하도록 정렬할 때 활용
 
-### Comparable을 이용한 정렬
+### 여러 기준으로 정렬
 
-- `Comparable` 인터페이스를 구현하여 정렬 가능한 객체를 만들 수 있다.
-- 객체지향적인(OOP) 방법으로, 구현해야 하는 코드 양이 많은 편
+- 정렬할 객체를 튜플로 만들면, 리스트를 여러 기준으로 정렬할 수 있다.
+- 튜플에서 낮은 인덱스의 값을 우선 기준으로 정렬하며, 값이 같은 경우 다음 인덱스의 값을 기준으로 정렬
 
     ``` python
-    class Item implements Comparable<Item> {
-        int x;
-        int y;
-
-        public Item(int x, int y) {
-            this.x = x;
-            this.y = y;
-        }
-
-        public int compareTo(o) {
-            if (this.x == o.x) {      // x가 같으면
-                return this.y - o.y;  // y 기준으로 오름차순
-            } else {                  // x가 다르면
-                return o.x - this.x;  // x 기준으로 내림차순
-            }
-        }
-    }
-
-    ...
-
-    List<Item> items = new ArrayList<>();
-    ...
-    items.sort();
-    ...
-
+    x = [(10, 5), (4, 2), (10, 6), (3, 15)]
+    x.sort()
+    print(x)
+    # [(3, 15), (4, 2), (10, 5), (10, 6)]
+    # 0번째 인덱스의 값이 3->4->10으로 정렬됨
+    # 10으로 0번째 인덱스 값이 같은 경우, 1번째 인덱스 값으로 정렬(5->6)
     ```
 
-### Comparator를 이용한 정렬
+### key와 익명함수를 이용하여 정렬
 
-- `Comparator` 클래스를 구현하여 정렬 방법을 결정할 수 있다.
-- 람다식을 이용한 함수형 프로그래밍(FP) 방법으로 적은 코드 작성으로도 구현이 가능
+- 정렬 시 key 인자에 비교할 값을 반환하는 익명함수를 삽입하여 구현
+- 익명함수를 이용한 함수형 프로그래밍(FP) 방법으로 적은 코드 작성으로도 구현이 가능
 
     ``` python
-    List<int[]> items = new ArrayList<>();
-    ...
-    items.sort((a, b) -> {
-        if (a[0] == b[0]) {
-            return a[1] - b[1];
-        } else {
-            return b[0] - a[0];
-        }
-    });
-
+    x = ["abcde", "fgh", "az", "qwer"]
+    x.sort(key=lambda x: len(x))
+    print(x)
+    # ['az', 'fgh', 'qwer', 'abcde']
+    # 문자열의 길이를 기준으로 정렬
     ```
 
 ## 정렬 문제
