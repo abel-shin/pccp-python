@@ -39,6 +39,17 @@
 - 스택과 마찬가지로 list와 deque를 주로 사용
 
     ``` python
+    queue = []
+    queue.append(1)
+    queue.append(12)
+    queue.append(30)
+
+    while queue:
+        value = queue.pop(0)
+        print(value) # 1, 12, 30
+    ```
+
+    ``` python
     from collections import deque
     
     queue = deque()
