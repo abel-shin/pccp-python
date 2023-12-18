@@ -137,7 +137,7 @@ def selection_sort(x):
 
 ### 팀소트 (Timsort)
 
-- **Java SE 7**, Android, GNU Octave, Chrome V8, Swift, Rust, Python 등에 적용된 정렬 알고리즘
+- **Python**, Java SE 7, Android, GNU Octave, Chrome V8, Swift, Rust 등에 적용된 정렬 알고리즘
 - Insertion Sort와 Merge Sort를 결합하여 만든 알고리즘
     - 작은 영역에 대해서 Insertion Sort를 수행하고, 이것을 Merge Sort하여 최적화
 - 공간복잡도: O(n)
@@ -180,6 +180,23 @@ def selection_sort(x):
     # ['az', 'fgh', 'qwer', 'abcde']
     # 문자열의 길이를 기준으로 정렬
     ```
+
+### compare 함수를 이용하여 정렬
+
+- 정렬 시 key 대신 compare 함수를 이용하여 정렬
+  - compare 함수: a, b를 비교하여 a가 더 크면 양수, b가 더 크면 음수를 반환하는 함수
+
+  ``` python
+  from functools import cmp_to_key
+  
+  def comp(a, b):
+      return b - a  # b가 더 크면 양수, a가 더 크면 음수이므로 "역방향 정렬"
+
+  x = [1, 10, 5, 2, 8, 15]
+  x.sort(key=cmp_to_key(comp))
+  print(x)
+  # [15, 10, 8, 5, 2, 1]
+  ```
 
 ## 정렬 문제
 
