@@ -26,9 +26,8 @@ array = [1, 6, 2, 5, 4, 2, 5, 2, 3, 6, 3]
 
 sum = 0
 # 배열의 길이에 비례해서 반복하는 for문. 복잡도는 N
-for i in range(len(array)) { 
+for i in range(len(array)):
     sum += array[i]
-}
 ```
 
 ``` python
@@ -38,14 +37,12 @@ array2 = [4, 2, 1, 6, 7, 4, 3, 6]
 
 sum = 0
 # 배열의 길이에 비례해서 반복하는 for문. 복잡도는 N
-for i in range(len(array)) { 
+for i in range(len(array)):
     sum += array[i]
-}
 
 # 두 번째 반복, 복잡도는 M
-for i in range(len(array2)) { 
+for i in range(len(array2)):
     sum += array2[i]
-}
 
 # 두 for문의 복잡도를 합친 전체 복잡도는 N+M
 ```
@@ -58,11 +55,9 @@ array2D = [[1, 6, 2, 5, 4],
 
 sum = 0
 # 이중 for문, M번 반복이 N번 반복되므로 복잡도는 N*M
-for i in range(len(array2D)) { 
-    for j in range(len(array2D[i])) { 
+for i in range(len(array2D)):
+    for j in range(len(array2D[i])):
         sum += array2D[i][j]
-    }
-}
 ```
 
 ## 복잡도의 종류
