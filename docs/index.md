@@ -4,7 +4,7 @@
 
 - [PCCP(Programmers Certified Coding Professional)](https://certi.programmers.co.kr/about/pccp)는 코딩전문역량인증 시험입니다.
 - 1000점 만점에 400점 이상 획득하면 합격이며, 점수에 따라 인증 등급(LV.1 ~ LV.5)이 주어집니다.
-- Python, Java, JavaScript, C++로 참가 가능하며, 본 과정은 Java 과정으로 이루어져 있습니다.
+- Python, Java, JavaScript, C++로 참가 가능하며, 본 과정은 Python 과정으로 이루어져 있습니다.
 
 ## PCCP 교육 커리큘럼
 
