@@ -34,6 +34,7 @@
 
 - 배열의 마지막에 있는 자료를 루트 노드로 옮긴다.
 - 자식 노드와 비교하여 더 크면 두 노드를 교체한다.
+  - 양쪽 자식 중 더 작은 값과 자리를 교체한다.
 - 리프 노드에 도달하거나 더이상 교체할 필요가 없을 때 까지 반복한다.
 
 ![자료의 삭제](img/section3/4.png)
@@ -47,13 +48,28 @@
     - `heapq.heappop(x)`: 리스트 `x`에서 자료를 하나 삭제하고 반환한다.
 
 ``` python
+from heapq import heapify, heappush, heappop
+x = [10, 9, 5, 23, 14, 6]
+heapify(x)
+
+heappush(x, 3)
+heappush(x, 6)
+
+while x:
+    print(heappop(x))
 ```
 
 ``` python
+from heapq import heapify, heappush, heappop
+x = [(1, 'hello'), (2, 'world'), (0, 'hi'), (-1, 'bye')]
+heapify(x)
+
+while x:
+    print(heappop(x))
 ```
 
 
 ## 다이나믹 프로그래밍 문제 풀이
 
-- [프로그래머스 등굣길 문제](https://school.programmers.co.kr/learn/courses/30/lessons/42898){:target="_blank"} ([답안 코드](https://github.com/abel-shin/pccp-python/blob/main/src/extra/Solution3.py){:target="_blank"})
-- [프로그래머스 도둑질 문제](https://school.programmers.co.kr/learn/courses/30/lessons/42897){:target="_blank"} ([답안 코드](https://github.com/abel-shin/pccp-python/blob/main/src/extra/Solution4.py){:target="_blank"})
+- [프로그래머스 더 맵게 문제](https://school.programmers.co.kr/learn/courses/30/lessons/42626){:target="_blank"} ([답안 코드](https://github.com/abel-shin/pccp-python/blob/main/src/extra/Solution3.py){:target="_blank"})
+- [프로그래머스 디스크 컨트롤러 문제](https://school.programmers.co.kr/learn/courses/30/lessons/42627){:target="_blank"} ([답안 코드](https://github.com/abel-shin/pccp-python/blob/main/src/extra/Solution4.py){:target="_blank"})
