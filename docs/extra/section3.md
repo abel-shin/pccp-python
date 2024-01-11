@@ -69,7 +69,7 @@ while x:
 ```
 
 
-## 다이나믹 프로그래밍 문제 풀이
+## Heap 문제 풀이
 
 - [프로그래머스 더 맵게 문제](https://school.programmers.co.kr/learn/courses/30/lessons/42626){:target="_blank"} ([답안 코드](https://github.com/abel-shin/pccp-python/blob/main/src/extra/Solution3.py){:target="_blank"})
 - [프로그래머스 디스크 컨트롤러 문제](https://school.programmers.co.kr/learn/courses/30/lessons/42627){:target="_blank"} ([답안 코드](https://github.com/abel-shin/pccp-python/blob/main/src/extra/Solution4.py){:target="_blank"})
