@@ -4,6 +4,9 @@
 # 조건에 따라 문자열을 분리하는 문제입니다.
 # 동일 동작을 분리된 문자열에 반복하여 적용하므로, 재귀 호출로 구현하면 쉽습니다.
 
+import sys
+sys.setrecursionlimit(10000)  # 최대 재귀 호출 횟수 변경
+
 def solution(s):
     count = 0 # 문자열 분리 횟수를 저장하는 변수
     def splitString(st):
